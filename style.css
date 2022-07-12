@@ -1,0 +1,153 @@
+
+@import url("https://fonts.googleapis.com");
+
+
+body{
+    background-color: antiquewhite;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Ubuntu', sans-serif;
+   
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+
+.brand img{
+    width: 44px;
+    padding:0 8px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.container{
+    min-height: 75vh;
+    background-color: black;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url('img/bg2.jpg');
+
+}
+
+.bottom{
+    position: sticky;
+    height: 120px;
+    background-color: rgb(23, 21, 21);
+    color: white;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    
+}
+.icons{
+    margin: 14px;
+}
+.icons i{
+cursor: pointer;
+}
+
+#myProgressBar{
+width: 80vh;
+cursor: pointer;
+
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    margin: 12px 0;
+    color: black;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+.timestamp{
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+
+}
+.songItem img{
+width: 43px;
+margin:0 23px;
+border-radius: 34px;
+}
+
+.songItemPlay{
+    margin-left: 10px;
+}
+
+.timestamp{
+    margin: 0 23px;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    top: 3vw;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s is ease-in;
+    padding:10px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: rgb(29, 184, 236);
+    }
+
+    .songItem{
+        height: auto;
+    }
+     
+    .container{
+        width: 100%;
+    }
+  }
+
+
+
+
+
+
+
+
+
